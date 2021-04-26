@@ -1,6 +1,0 @@
-if (WITH_ARGON2)
-    add_subdirectory(src/3rdparty/argon2)
-    set(ARGON2_LIBRARY argon2)
-else()
-    set(ARGON2_LIBRARY "")
-endif()

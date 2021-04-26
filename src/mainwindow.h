@@ -2,10 +2,9 @@
 
 #include <QMainWindow>
 #include <QFile>
-#include <vector>
+
 #include <string>
 #include <memory>
-#include "3rdparty/argon2/include/argon2.h"
 
 namespace Ui {
 class MainWindow;
@@ -26,7 +25,8 @@ private slots:
 private:
     const std::unique_ptr<Ui::MainWindow> m_ui;
     void setParameters();
-    argon2_type TYPE{};
+
+    std::string TYPE{};
     quint32 T_COST{};
     quint32 M_COST{};
     quint32 THREADS{};
